@@ -18,6 +18,7 @@ app.use("/css", express.static(path.join(process.cwd(), "public/css")));
 app.use("/img", express.static(path.join(process.cwd(), "public/img")));
 
 
+app.use(express.urlencoded({extended : false}));
 
 app.use(router)
 

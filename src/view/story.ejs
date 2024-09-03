@@ -38,8 +38,10 @@
         <div class="story_content">
           <p><%- data.content %></p>
           <p>
-            By <%= data.author %> on <%= new
-            Date(data.publishDate).toLocaleDateString()%>
+            <strong
+              >By <%= data.author %> on <%= new
+              Date(data.publishDate).toLocaleDateString()%></strong
+            >
           </p>
         </div>
       </article>

@@ -59,6 +59,23 @@ router.post("/admin/story/create", (req, res) => {
     })
 
     .catch((error) => console.log(error))
+});
+
+router.get("/authentification", (req, res) => {
+    const q = "SELECT * FROM user";
+
+    pool.query(q).then(([users]) => {
+
+    res.render("authentification", {users})
+    
 })
+});
+
+
+router.get("*", (req, res) => {
+    res.render("error");
+});
+
+
 
 export default router;

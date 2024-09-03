@@ -1,0 +1,161 @@
+*{  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+hmtl{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1rem;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content:space-between;
+    background-color: royalblue;
+    padding: 10px;
+}
+
+header h1{
+    color: white;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+header a:active{
+    color: royalblue;
+    background-color: white;
+}
+
+header nav{
+    display: flex;
+    gap: 5px;
+}
+
+.home_art{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 200px;
+    margin-top: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.home_art h2{
+    text-align: center;
+}
+.home_art a{
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    background-color: royalblue;
+    color: white;
+    border-radius: 10px;
+}
+
+.home_sect{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+article img{
+    height: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.story_art{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-bottom: 20px;
+}
+
+.story_art h2{
+    text-align: center;
+}
+
+.story_content{
+    padding: 10px;
+}
+
+.back_home{
+    border: solid 1px royalblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 130px;
+    text-align: center;
+}
+
+.back_home a{
+    text-decoration: none;
+}
+
+.admin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.admin img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.admin_list{
+    display: flex;
+    flex-direction: column;
+}
+table{
+    text-align: center;
+    border: 1px solid royalblue;
+    margin-bottom: 20px;
+}
+
+td{
+    border: 1px solid royalblue;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    width: 80%;
+}
+
+textarea {
+    height: 200px;
+}
+
+footer{
+    background-color: royalblue;
+    text-align: center;
+    padding: 10px; 
+}

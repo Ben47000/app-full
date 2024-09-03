@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>Story</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ze Blog</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="authentification">SignIn</a>
+        <a href="subscribe">Subscribe</a>
+      </nav>
+    </header>
+    <div class="back_home">
+      <a href="/"><i class="fa-solid fa-arrow-left"></i> Back to home</a>
+    </div>
+    <main class="container">
+      <article class="story_art">
+        <div>
+          <h2><%= data.title %></h2>
+          <img
+            class="story_art_img"
+            src="/img/<%= data.img %>"
+            alt=" <%= data.title  %>"
+          />
+        </div>
+        <div class="story_content">
+          <p><%- data.content %></p>
+          <p>
+            By <%= data.author %> on <%= new
+            Date(data.publishDate).toLocaleDateString()%>
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <p>By BenMen</p>
+    </footer>
+  </body>
+</html>

@@ -117,6 +117,9 @@ article img{
     padding: 10px;
 }
 
+.fa-star{
+    font-size: 50px;
+}
 .back_home{
     border: solid 1px royalblue;
     border-radius: 10px;

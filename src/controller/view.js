@@ -19,23 +19,7 @@ const story = (req, res) =>{
          .catch(error => console.log(error));
  };
 
- const admin = (req, res) =>{
-    res.render("admin/index");
-};
-
-const admin_story = (req, res) => {
-    const q = "SELECT * FROM story";
-    pool.query(q).then(([stories]) => {
-        res.render("admin/story/list", {stories});
-    });
-};
-
-const admin_story_create = (req, res) =>{
-    const q = "SELECT * FROM category";
-    pool.query(q).then(([categories]) =>{
-        res.render("admin/story/create" ,{ categories});
-    });
-}
+ 
 
 const authentification = (req, res) => {
     res.render("authentification")
@@ -50,4 +34,4 @@ const error = (req, res) => {
 };
 
 
-export {home, story, admin, admin_story, admin_story_create, authentification, error, subscribe};
+export {home, story, authentification, error, subscribe};

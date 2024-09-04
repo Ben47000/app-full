@@ -14,14 +14,7 @@
     <title>Story</title>
   </head>
   <body>
-    <header>
-      <h1>Ze Blog</h1>
-      <nav>
-        <a href="/">Home</a>
-        <a href="authentification">SignIn</a>
-        <a href="subscribe">Subscribe</a>
-      </nav>
-    </header>
+    <%- include("partial/header") %>
     <div class="back_home">
       <a href="/"><i class="fa-solid fa-arrow-left"></i> Back to home</a>
     </div>
@@ -46,8 +39,6 @@
         </div>
       </article>
     </main>
-    <footer>
-      <p>By BenMen</p>
-    </footer>
+    <%- include("partial/footer") %>
   </body>
 </html>

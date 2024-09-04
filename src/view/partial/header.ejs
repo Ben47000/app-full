@@ -1,0 +1,17 @@
+<header>
+  <h1>Ze Blog</h1>
+  <nav>
+    <% if(locals.isLogged) { %>
+    <a href="/"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="/dashborad"><i class="fa-solid fa-user"></i> Dashboard</a>
+    <a href="/logout"><i class="fa-solid fa-plug-circle-xmark"></i> Logout</a>
+    <% } else { %>
+    <a href="/"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="/subscribe"><i class="fa-solid fa-clipboard"></i> Subscribe</a>
+    <a href="/authentification"
+      ><i class="fa-solid fa-right-to-bracket"></i> SignIn</a
+    >
+    <a href="/admin">ADMIN</a>
+    <% } %>
+  </nav>
+</header>

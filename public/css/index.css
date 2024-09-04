@@ -18,6 +18,14 @@ body{
     margin: auto;
 }
 
+.banniere{
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+
+}
+
 a:hover {
 	text-decoration: underline;
 }
@@ -38,6 +46,7 @@ header h1{
 header a{
     text-decoration: none;
     color: white;
+    padding: 10px;
 }
 
 header a:active{
@@ -58,6 +67,11 @@ header nav{
     width: 200px;
     margin-top: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.home_art:hover{
+    transition: 1s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 20) 0px 1px 10px -1px;
 }
 
 .home_art h2{

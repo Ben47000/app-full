@@ -11,7 +11,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/css/index.css" />
-    <title>ERROR 404</title>
+    <title>Subscribe</title>
   </head>
   <body>
     <header>
@@ -22,14 +22,16 @@
           ><i class="fa-solid fa-right-to-bracket"></i> SignIn</a
         >
         <a href="/subscribe"><i class="fa-solid fa-clipboard"></i> Subscribe</a>
-        <a href="/admin">ADMIN</a>
       </nav>
     </header>
-    <div class="back_home">
-      <a href="/"><i class="fa-solid fa-arrow-left"></i> Back to home</a>
-    </div>
     <main class="container">
-      <h2>ERROR 404 / PAGE INTROUVABLE</h2>
+      <form action="/subscribe" method="post">
+        <label for="username">Username : </label>
+        <input type="text" name="username" id="username" />
+        <label for="password">Password : </label>
+        <input type="password" name="password" id="password" />
+        <button type="submit">Subscribe</button>
+      </form>
     </main>
     <footer>
       <p>By BenMen</p>

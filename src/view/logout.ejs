@@ -11,25 +11,13 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/css/index.css" />
-    <title>Blog</title>
+    <title>Logout</title>
   </head>
   <body>
     <%- include("partial/header") %>
-    <h2 class="banniere">Hello <%= locals.username %> !</h2>
-    <main class="container">
-      <section class="home_sect">
-        <% for (data of datas) { %>
-        <article class="home_art">
-          <h2><%= data.title %></h2>
-          <img src="img/<%= data.img %>" alt=" <%= data.title  %>" />
-          <% if(locals.isLogged) { %>
-          <a href="/story/<%= data.id %>">Read More</a>
-          <% } %>
-        </article>
-        <% } %>
-      </section>
+    <main>
+      <h2>You're logged out !</h2>
     </main>
-
     <%- include("partial/footer") %>
   </body>
 </html>

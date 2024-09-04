@@ -38,18 +38,16 @@ const admin_story_create = (req, res) =>{
 }
 
 const authentification = (req, res) => {
-    const q = "SELECT * FROM user";
-
-    pool.query(q).then(([users]) => {
-
-    res.render("authentification", {users})
-
-})
+    res.render("authentification")
 };
+
+const subscribe = (req, res) => {
+    res.render("subscribe");
+}
 
 const error = (req, res) => {
     res.render("error");
 };
 
 
-export {home, story, admin, admin_story, admin_story_create, authentification, error};
+export {home, story, admin, admin_story, admin_story_create, authentification, error, subscribe};
